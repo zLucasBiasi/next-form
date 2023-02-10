@@ -1,4 +1,5 @@
 import { Input } from "@/components/Input";
+import { Textarea } from "@/components/Textarea";
 import { Title } from "@/components/Title";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Input type="text" label="Link do evento" rule="comece com https://" />
       <Input type="text" label="Whatsapp para contato" rule="somente numeros" />
 
+      <Textarea label="Informações extras" />
       <Title title="Privacidade" />
 
       <Input
