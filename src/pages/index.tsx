@@ -1,3 +1,4 @@
+import { Checkbox } from "@/components/Checkbox";
 import { Input } from "@/components/Input";
 import { Select } from "@/components/Select";
 import { Textarea } from "@/components/Textarea";
@@ -31,7 +32,8 @@ export default function Home() {
         label="Senha de acesso para os participantes"
         rule="mínimo 8 caracteres"
       />
-      <Input type="text" label="Whatsapp para contato" rule="somente numeros" />
+
+      <Checkbox label="Evento privado" />
 
       <Title title="Dia e hora" />
     </>

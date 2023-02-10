@@ -1,7 +1,8 @@
 import { Container } from "@/styles/global";
 
-import * as S from "./styles";
 import { SelectProps } from "./types";
+
+import * as S from "./styles";
 
 export const Select = ({ label, options }: SelectProps) => {
   return (
