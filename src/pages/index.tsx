@@ -1,4 +1,5 @@
 import { Input } from "@/components/Input";
+import { Select } from "@/components/Select";
 import { Textarea } from "@/components/Textarea";
 import { Title } from "@/components/Title";
 
@@ -12,6 +13,12 @@ export default function Home() {
       <Input type="text" label="Whatsapp para contato" rule="somente numeros" />
 
       <Textarea label="Informações extras" />
+
+      <Select
+        label="Categoria"
+        options={["evento 1", "evento 2", "evento 3"]}
+      />
+
       <Title title="Privacidade" />
 
       <Input
