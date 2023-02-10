@@ -1,20 +1,28 @@
+import { useState } from "react";
+
 import { Container } from "@/styles/global";
 
 import { SelectProps } from "./types";
 
 import * as S from "./styles";
 
-export const Select = ({ label, options }: SelectProps) => {
+export const Select = ({ options, label, value, setValue }: SelectProps) => {
   return (
     <Container>
       <S.Label htmlFor={label}>
         <div> {label}</div>
-        <S.Select name={label} id={label}>
-          <option selected disabled>
+        <S.Select
+          value={value}
+          onChange={({ target }) => setValue(target.value)}
+          id={label}
+        >
+          <option value="" disabled>
             Tipo do evento
           </option>
-          {options?.map((item, key) => (
-            <option key={key}>{item}</option>
+          {options.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
           ))}
         </S.Select>
       </S.Label>
