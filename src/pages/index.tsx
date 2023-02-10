@@ -1,9 +1,9 @@
-import { Form } from "@/templates/Form";
+import { FormTemplate } from "@/templates/Form";
 
 export default function Home() {
   return (
     <>
-      <Form />
+      <FormTemplate />
     </>
   );
 }
