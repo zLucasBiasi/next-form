@@ -4,9 +4,10 @@ const theme = {
     white: "#fff",
     black: "#000",
     purple: "#32264D",
-    ligth_purple: "#4E4958",
+    gray: "#4E4958",
     cian: "#42D3FF",
     green: "#04D361",
+    backLines: "#E6E6F0",
   },
 };
 
