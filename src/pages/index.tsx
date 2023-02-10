@@ -1,4 +1,4 @@
-import { Form } from "@/Templates/Form";
+import { Form } from "@/templates/Form";
 
 export default function Home() {
   return (
