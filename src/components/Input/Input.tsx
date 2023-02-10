@@ -3,14 +3,14 @@ import { InputProps } from "./types";
 
 import * as S from "./styles";
 
-export const Input = ({ label, type, rule }: InputProps) => {
+export const Input = ({ label, type, rule, ...props }: InputProps) => {
   return (
     <Container>
       <S.Label htmlFor={label}>
         <div>
-          {label} <S.Rule>({rule})</S.Rule>
+          {label} {rule && <S.Rule>({rule})</S.Rule>}
         </div>
-        <S.Input type={type} id={label} />
+        <S.Input type={type} id={label} {...props} />
       </S.Label>
     </Container>
   );
