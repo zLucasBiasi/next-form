@@ -16,7 +16,7 @@ export const Button = styled.button`
     text-transform: uppercase;
 
     &:hover {
-      box-shadow: 1px 1px 6px 1px green;
+      box-shadow: 0.1rem 0.1rem 0.6rem 0.1rem green;
     }
   `}
 `;
