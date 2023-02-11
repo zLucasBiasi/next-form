@@ -1,5 +1,6 @@
-import { Container } from "@/styles/global";
 import { InputProps } from "./types";
+
+import { Container } from "@/styles/global";
 
 import * as S from "./styles";
 

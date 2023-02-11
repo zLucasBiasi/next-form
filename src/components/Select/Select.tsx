@@ -1,8 +1,6 @@
-import { useState } from "react";
+import { SelectProps } from "./types";
 
 import { Container } from "@/styles/global";
-
-import { SelectProps } from "./types";
 
 import * as S from "./styles";
 
