@@ -17,7 +17,7 @@ export const FormTemplate = () => {
     <>
       <Container>
         <Form>
-          <Title title="Informações do Evento" />
+          <Title>Informações do Evento</Title>
           <Input
             type="text"
             label="Título do evento"
@@ -42,7 +42,9 @@ export const FormTemplate = () => {
               setSelectedOption(option)
             }
           />
-          <Title title="Privacidade" />
+
+          <Title>Privacidade</Title>
+
           <Input
             type="text"
             label="E-mail do administrador"
@@ -54,7 +56,9 @@ export const FormTemplate = () => {
             rule="mínimo 8 caracteres"
           />
           <Checkbox label="Evento privado" />
-          <Title title="Dia e hora" />
+
+          <Title>Dia e hora</Title>
+
           <S.Wrapper>
             <Input label="Data" />
             <Input label="Das" placeholder="19:00" />
